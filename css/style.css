@@ -1,0 +1,214 @@
+/* :root {
+    --main-bg-color: #E6E0E0;
+} */
+
+/* ================================= 
+  Web Fonts
+==================================== */
+
+body {
+    font-family: 'Merriweather', Arial, sans-serif;
+    /* background-color: var(--main-bg-color); */
+}
+
+/* ================================= 
+  Base Element Styles
+==================================== */
+
+* {
+    box-sizing: border-box;
+}
+
+.border-style {
+    border: none;
+    border-radius: 5px;
+}
+
+header,
+.name,
+footer {
+    text-align: center;
+}
+
+label,
+footer {
+    color: #697A89;
+}
+
+#state,
+input[placeholder="required"]::placeholder {
+    color: rgb(194, 193, 193);
+    
+}
+
+/* ================================= 
+  Base Layout Styles
+==================================== */
+
+
+/* ---- Header ---- */
+
+header {
+    padding-bottom: 40px;
+    border-bottom: 4px solid black;
+    margin: 0 20px 3px 20px;
+}
+
+.name {
+    background-color: #2D3945;
+    color: #fff;
+    padding: 30px;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-weight: bold;
+    margin-top: 35px
+}
+
+.header-paragraph {
+    color: #DCDEE0;
+    padding: 0 40px;
+}
+
+/* ---- Contact-Form ---- */
+
+form {
+    border-top: 2px solid black;
+    margin: 0 20px;
+    display: block;
+}
+
+.contact-form fieldset legend {
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+.contact-form fieldset {
+    margin-top: 40px;
+}
+
+.contact-form fieldset legend {
+    margin-bottom: 30px;
+}
+
+input[placeholder="required"]::placeholder {
+    text-align: right;
+    font-style: italic;
+    text-transform: capitalize;
+}
+
+input[type="text"],
+input[type="tel"],
+select {
+    width: 100%;
+    margin: 15px 0;
+    padding: 15px 20px;
+    background-color: #EFF0F1;
+    border: inset 0px white
+}
+
+/* [for="zipcode"] {
+    display:block;
+} */
+/* 
+input[name=zipcode] {
+    width: 50%;
+} */
+
+input[type]:focus,
+select:focus,
+textarea:focus {
+    border: 2px solid rgb(106, 150, 192);
+}
+
+/* ---- Newsletter-Form ---- */
+
+.contact-form {
+    border-bottom: 3px solid black;
+    padding-bottom: 35px;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+    margin-right: 5px;
+}
+
+.col-group {
+    padding: 15px 0;
+}
+
+[for="othertopic"] {
+    margin: 20px 0;
+}
+
+textarea {
+    width: 100%;
+    background-color: #EFF0F1;
+    resize: none;
+    margin-top: 30px;
+}
+[type="submit"] {
+    width: 100%;
+    margin: 25px 0;
+    padding: 30px 0;
+    background-color: #4EBBB5;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* ---- Newsletter-Form ---- */
+
+footer {
+    padding: 20px 0;
+    font-style: italic;
+}
+
+/* ================================= 
+  Media Queries
+==================================== */
+
+@media (min-width: 768px) {
+    header,
+    main,
+    footer {
+        width: 75%;
+        margin: 0 auto;
+    }
+
+    header {
+        margin-bottom: 4px
+    }
+
+    h2 {
+        margin-top: 65px
+    }
+
+    form {
+        margin: 0;
+    }
+
+
+    .col {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    .col label {
+        flex:1 300px;
+    }
+    .col input {
+        margin-left: auto;
+    }
+
+    input[name=zipcode] {
+        flex-direction: initial;
+        width: 50%;
+    }
+
+
+
+    
+}
