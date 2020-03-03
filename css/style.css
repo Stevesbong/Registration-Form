@@ -104,6 +104,7 @@ form {
 
 input[type="text"],
 input[type="tel"],
+input[type="email"],
 select {
     margin: 15px 0;
     padding: 15px 20px;
@@ -161,6 +162,23 @@ textarea {
 }
 
 /* ---- Newsletter-Form ---- */
+
+.newsletter-form {
+    margin-top: 40px;
+}
+
+.newsletter-form legend {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 20px
+}
+
+.col-group:nth-last-of-type(3),
+.col-group:last-of-type {
+    margin-bottom: 30px;
+}
+
+/* ---- Footer ---- */
 
 footer {
     padding: 20px 0;
